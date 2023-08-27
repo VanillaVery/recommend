@@ -71,5 +71,6 @@ for epoch in range(1000):
 #소요시간확인
 sgd_time = time.time() - start_time
 print(f'sgd method: a={a},b={b},rmse={loss},time={sgd_time}seconds')
+#sgd method: a=1.980242701000922,b=-0.06956815134873814,rmse=0.09905289059034568,time=0.04378628730773926seconds
 #%%
-
+print(f'sgd가 무작위 방법에 비해{brute_force_time/sgd_time:.2f}배 빠름')
